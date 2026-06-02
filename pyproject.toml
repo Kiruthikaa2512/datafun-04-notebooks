@@ -165,6 +165,11 @@ convention = "google"   # ALT: "numpy" — choose one, never mix.
 build-backend = "hatchling.build"
 requires = ["hatchling"]
 
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+]
+
 
 [tool.hatch.build.targets.wheel]
 # CUSTOM: Must match src/ folders.
