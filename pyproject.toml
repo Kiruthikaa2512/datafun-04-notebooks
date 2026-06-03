@@ -10,6 +10,9 @@
 # ============================================================
 
 [project]
+authors = [
+    { name = "Kiruthikaa Natarajan Srinivasan" }
+]
 name = "datafun-04-notebooks" # CUSTOM: Package distribution name (use lowercase and dashes).
 readme = "README.md"
 requires-python = ">=3.14"
@@ -167,6 +170,10 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
+    "jupyterlab>=4.5.7",
+    "nbconvert>=7.17.1",
+    "notebook>=7.5.6",
     "pre-commit>=4.6.0",
 ]
 
