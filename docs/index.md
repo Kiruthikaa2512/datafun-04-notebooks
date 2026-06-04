@@ -23,3 +23,40 @@ to get these projects running on your machine.
   - [RESOURCES.md](./module/RESOURCES.md)
   - [seaborn-datasets.md](./module/seaborn-datasets.md)
   - [TROUBLESHOOTING.md](./module/TROUBLESHOOTING.md)
+
+## Custom Project
+
+### Dataset
+
+This project uses the Palmer Penguins dataset, which contains measurements for penguins from three species (Adelie, Chinstrap, and Gentoo) collected across the islands of Biscoe, Dream, and Torgersen. The dataset includes bill measurements, flipper length, body mass, species, island, and sex.
+
+### Signals
+
+The analysis used the following signals:
+
+* Species
+* Island
+* Body Mass (g)
+* Flipper Length (mm)
+* Bill Length (mm)
+* Bill Depth (mm)
+
+Additional analytical signals were created by calculating average body mass by species and examining correlations among numerical variables.
+
+### Experiments
+
+I modified the original exploratory data analysis notebook by creating three custom visualizations:
+
+1. Average Body Mass by Species
+2. Flipper Length vs. Body Mass
+3. Correlation Matrix Heatmap
+
+I also explored island-based grouping and updated the project summary with custom findings.
+
+### Results
+
+The analysis showed that Gentoo penguins have the highest average body mass among the three species. A strong positive relationship was observed between flipper length and body mass. The correlation analysis revealed that flipper length and body mass have the strongest correlation (approximately 0.87). Island-based grouping highlighted geographic differences among penguin populations.
+
+### Interpretation
+
+The results demonstrate how exploratory data analysis can uncover meaningful patterns in a dataset. Physical measurements such as flipper length can serve as strong indicators of body mass, while species and island groupings help explain differences within penguin populations. These findings could support future predictive modeling and deeper analysis of biological characteristics.
