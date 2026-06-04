@@ -28,35 +28,26 @@ to get these projects running on your machine.
 
 ### Dataset
 
-This project uses the Palmer Penguins dataset, which contains measurements for penguins from three species (Adelie, Chinstrap, and Gentoo) collected across the islands of Biscoe, Dream, and Torgersen. The dataset includes bill measurements, flipper length, body mass, species, island, and sex.
+For this project, I used the Palmer Penguins dataset. The dataset contains measurements for Adelie, Chinstrap, and Gentoo penguins collected from the islands of Biscoe, Dream, and Torgersen. The available attributes include bill length, bill depth, flipper length, body mass, species, island, and sex.
 
 ### Signals
 
-The analysis used the following signals:
-
-* Species
-* Island
-* Body Mass (g)
-* Flipper Length (mm)
-* Bill Length (mm)
-* Bill Depth (mm)
-
-Additional analytical signals were created by calculating average body mass by species and examining correlations among numerical variables.
+The primary signals used in this analysis were species, island, body mass, flipper length, bill length, and bill depth. I also explored average body mass across species and examined correlations among numerical measurements to better understand relationships within the dataset.
 
 ### Experiments
 
-I modified the original exploratory data analysis notebook by creating three custom visualizations:
+To customize the original notebook, I focused on exploring penguin characteristics through new visualizations and island-based grouping. I created the following visualizations:
 
 1. Average Body Mass by Species
 2. Flipper Length vs. Body Mass
 3. Correlation Matrix Heatmap
 
-I also explored island-based grouping and updated the project summary with custom findings.
+I also updated the notebook summary and README documentation to reflect my findings and interpretations.
 
 ### Results
 
-The analysis showed that Gentoo penguins have the highest average body mass among the three species. A strong positive relationship was observed between flipper length and body mass. The correlation analysis revealed that flipper length and body mass have the strongest correlation (approximately 0.87). Island-based grouping highlighted geographic differences among penguin populations.
+The analysis showed that Gentoo penguins have the highest average body mass among the three species. I observed a strong positive relationship between flipper length and body mass, indicating that larger penguins generally have longer flippers. The correlation heatmap confirmed that flipper length and body mass have the strongest relationship among the numerical variables. Island-based grouping also revealed differences in penguin populations across locations.
 
 ### Interpretation
 
-The results demonstrate how exploratory data analysis can uncover meaningful patterns in a dataset. Physical measurements such as flipper length can serve as strong indicators of body mass, while species and island groupings help explain differences within penguin populations. These findings could support future predictive modeling and deeper analysis of biological characteristics.
+This project reinforced how exploratory data analysis can be used to identify patterns and relationships within a dataset. The findings suggest that physical measurements such as flipper length can be useful indicators of body mass. Exploring the data by island also demonstrated how location can influence population characteristics. Overall, the project helped me practice data exploration, visualization, interpretation, and documentation using Python and Jupyter notebooks.
