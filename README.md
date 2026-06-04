@@ -169,8 +169,34 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 
 ## Findings and Visuals
 
+## Custom Project
 
-During my exploratory analysis of the Palmer Penguins dataset, I created three custom visualizations to better understand the relationships among penguin species and their physical characteristics.
+### Dataset
+
+For this project, I used the Palmer Penguins dataset. The dataset contains measurements for Adelie, Chinstrap, and Gentoo penguins collected from the islands of Biscoe, Dream, and Torgersen. The available attributes include bill length, bill depth, flipper length, body mass, species, island, and sex.
+
+### Signals
+
+The primary signals used in this analysis were species, island, body mass, flipper length, bill length, and bill depth. I also explored average body mass across species and examined correlations among numerical measurements to better understand relationships within the dataset.
+
+### Experiments
+
+To customize the original notebook, I focused on exploring penguin characteristics through new visualizations and island-based grouping. I created the following visualizations:
+
+1. Average Body Mass by Species
+2. Flipper Length vs. Body Mass
+3. Correlation Matrix Heatmap
+
+I also updated the notebook summary and README documentation to reflect my findings and interpretations.
+
+### Results
+
+The analysis showed that Gentoo penguins have the highest average body mass among the three species. I observed a strong positive relationship between flipper length and body mass, indicating that larger penguins generally have longer flippers. The correlation heatmap confirmed that flipper length and body mass have the strongest relationship among the numerical variables. Island-based grouping also revealed differences in penguin populations across locations.
+
+### Interpretation
+
+This project reinforced how exploratory data analysis can be used to identify patterns and relationships within a dataset. The findings suggest that physical measurements such as flipper length can be useful indicators of body mass. Exploring the data by island also demonstrated how location can influence population characteristics. Overall, the project helped me practice data exploration, visualization, interpretation, and documentation using Python and Jupyter notebooks.
+
 
 ### Average Body Mass by Species
 
@@ -188,4 +214,4 @@ This scatter plot shows the relationship between flipper length and body mass. I
 
 ![Correlation Matrix Heatmap](./docs/images/custom/custom_figure_3.png)
 
-The correlation heatmap summarizes the relationships among the numerical variables in the dataset. The strongest positive correlation is between flipper length and body mass (0.87), indicating a strong linear relationship. Bill length also shows a moderate positive relationship with body mass, while bill depth has a negative relationship with several variables. This visualization helped identify which measurements are most strongly associated with penguin size.
+The correlation heatmap summarizes the relationships among the numerical variables in the dataset. The strongest positive correlation is between flipper length and body mass (0.87), indicating a strong linear relationship. Bill length also shows a moderate positive relationship with body mass, while bill depth has a negative relationship with several variables. This visualization helped identify which measurements are most strongly associated with penguin size and highlighted variables that may be useful for future predictive analysis.
