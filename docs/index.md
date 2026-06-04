@@ -28,7 +28,9 @@ to get these projects running on your machine.
 
 ### Dataset
 
-For this project, I used the Palmer Penguins dataset. The dataset contains measurements for Adelie, Chinstrap, and Gentoo penguins collected from the islands of Biscoe, Dream, and Torgersen. The available attributes include bill length, bill depth, flipper length, body mass, species, island, and sex.
+For this project, I used the existing Palmer Penguins dataset provided in the example. The dataset contains measurements for Adelie, Chinstrap, and Gentoo penguins collected from the islands of Biscoe, Dream, and Torgersen. The available attributes include bill length, bill depth, flipper length, body mass, species, island, and sex.
+
+I wanted to explore the penguins dataset further because we had worked with it in an earlier assignment. Revisiting it after a brief break helped refresh my understanding of the exploratory data analysis workflow and gave me more confidence in applying these skills to new datasets and problems in upcoming assignments.
 
 ### Signals
 
