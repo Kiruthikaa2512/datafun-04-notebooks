@@ -146,45 +146,46 @@ You accidentally started Python interactive mode.
 It happens.
 Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 
-## Example Output (Can Remove this Section after You Verify)
+## Project Summary
 
 ```shell
-| INFO | EDA | --- Section 9: Summary and next steps ---
-| INFO | EDA | ========================
-| INFO | EDA | SUMMARY
-| INFO | EDA | ========================
-| INFO | EDA | Dataset: penguins
-| INFO | EDA | Original rows: 344
-| INFO | EDA | Clean rows:    342
-| INFO | EDA | Groups found in species: ['Adelie', 'Chinstrap', 'Gentoo']
-| INFO | EDA | Strongest correlation:
-| INFO | EDA |   flipper_length_mm and body_mass_g (~0.87)
-| INFO | EDA | Suggested next step:
-| INFO | EDA |   Model body_mass_g ~ flipper_length_mm with linear regression
-| INFO | EDA | ----- in a script, call plt.show() once at the end to display all charts -----
-| INFO | EDA | EDA workflow complete
-| INFO | EDA | IMPORTANT: This script creates chart windows.
-| INFO | EDA | Close any chart windows and terminate this process with CTRL+c as needed.
-| INFO | EDA | ========================
-| INFO | EDA | Executed successfully!
-| INFO | EDA | ========================
+2026-06-03 21:58:35 | INFO | EDA-NB | Dataset: penguins
+2026-06-03 21:58:35 | INFO | EDA-NB | Original rows: 344
+2026-06-03 21:58:35 | INFO | EDA-NB | Clean rows:    342
+2026-06-03 21:58:35 | INFO | EDA-NB | Groups found in island: ['Biscoe', 'Dream', 'Torgersen']
+2026-06-03 21:58:35 | INFO | EDA-NB | Key Findings:
+2026-06-03 21:58:35 | INFO | EDA-NB |   Gentoo penguins have the highest average body mass.
+2026-06-03 21:58:35 | INFO | EDA-NB |   Flipper length and body mass show a strong positive correlation.
+2026-06-03 21:58:35 | INFO | EDA-NB |   Grouping by island reveals geographic differences in penguin characteristics.
+2026-06-03 21:58:35 | INFO | EDA-NB | Suggested next step:
+2026-06-03 21:58:35 | INFO | EDA-NB |   Model body_mass_g ~ flipper_length_mm with linear regression
+2026-06-03 21:58:35 | INFO | EDA-NB | EDA workflow complete
+2026-06-03 21:58:35 | INFO | EDA-NB | IMPORTANT: This script creates chart windows.
+2026-06-03 21:58:35 | INFO | EDA-NB | Close any chart windows and terminate this process with CTRL+c as needed.
+2026-06-03 21:58:35 | INFO | EDA-NB | ========================
+2026-06-03 21:58:35 | INFO | EDA-NB | Executed successfully!
+2026-06-03 21:58:35 | INFO | EDA-NB | ========================
 ```
 
 ## Findings and Visuals
 
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure by using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
-Note: When you start typing the path with a dot (.) for "here, in this directory",
-the IDE may help complete the path.
 
-Follow this example, but the figures should
-reflect your work and include your narrative.
-Remove unnecessary instructional comments in your final version of this README.md.
+During my exploratory analysis of the Palmer Penguins dataset, I created three custom visualizations to better understand the relationships among penguin species and their physical characteristics.
 
-![Correlation Heatmap](./docs/images/Figure_1.png)
+### Average Body Mass by Species
 
-![Provide a Useful Caption](./docs/images/Figure_2.png)
+![Average Body Mass by Species](./docs/images/custom/custom_figure_1.png)
 
-![Provide a Useful Caption](./docs/images/Figure_3.png)
+This chart compares the average body mass of the three penguin species. I found that Gentoo penguins have the highest average body mass, at approximately 5,000 grams, while Adelie and Chinstrap penguins have considerably lower average body mass values. This suggests that Gentoo penguins are generally larger and heavier than the other species in the dataset.
+
+### Flipper Length vs. Body Mass
+
+![Flipper Length vs Body Mass](./docs/images/custom/custom_figure_2.png)
+
+This scatter plot shows the relationship between flipper length and body mass. I observed a strong positive relationship between these two variables, meaning that penguins with longer flippers tend to have higher body mass. The data also shows visible clustering among species, particularly Gentoo penguins, which tend to have both longer flippers and greater body mass.
+
+### Correlation Matrix Heatmap
+
+![Correlation Matrix Heatmap](./docs/images/custom/custom_figure_3.png)
+
+The correlation heatmap summarizes the relationships among the numerical variables in the dataset. The strongest positive correlation is between flipper length and body mass (0.87), indicating a strong linear relationship. Bill length also shows a moderate positive relationship with body mass, while bill depth has a negative relationship with several variables. This visualization helped identify which measurements are most strongly associated with penguin size.
